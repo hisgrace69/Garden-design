@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --font-primary:'Rubik', sans-serif;
+    --font-secondary: 'Roboto', sans-serif;
+    --font-tertiary:'Lato', sans-serif;
+    --text-primary-color:#111111;
+    --text-secondary-color:#666666;
+    --primary-color: #6ec656; 
+    --background-color: #f5f5f5;
+}
+
+
+
+.service{
+    background-color: var(--background-color);
+}
+.service .section{
+    padding: 8% 0;
+}
+
+/* garden ends here */
+/* garden starts here */
+
+.garden{
+    height: 20rem;
+    padding: 5% 0 0;
+    /* margin-bottom: 25%; */
+
+}
+.garden .container{
+    background-color: yellow;
+
+    /* top: 0; */
+    position: relative;
+
+}
+.garden .main{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+}
+
+.garden .box{
+    background-color: rgb(47, 0, 255);
+    width: 48%;
+    /* height: 18rem; */
+}
+.garden .box .top{
+}
+.garden .box .top img{
+    width: 100%;
+    /* height: 25rem; */
+}
+.garden .box h2{
+    color: var(--text-primary-color);
+    font-size: 27px;
+}
+.garden .box p{
+    color: var(--text-secondary-color);
+}
+.garden .box .bottom{
+    border: 1px solid black;
+    background-color: red;
+}
+
+/* garden ends here */
+/*  choose starts here */
+
+.choose{
+    background-image: url(../image/image-8.jpg);
+    /* height: 30rem; */
+}
+.choose .top{
+    width: 50%;
+    padding-top: 30%;
+}
+.choose .top h2{
+    font-size: 36px;
+}
+.choose .top p{
+    color: white;
+}
+.choose .bottom{
+    display: flex;
+    justify-content: space-between;
+}
+.choose .bottom .box{
+    width: 33%;
+    height: 20rem;
+    background-color: white;
+    /* border: 1px solid black; */
+    padding: 2%;
+    margin: 0 1%;
+}
+.choose .bottom .box .icon{
+    width: 5rem;
+    height: 5rem;
+    margin: 0 0 6%;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+}
+.choose .bottom .box .icon i{
+    color: white;
+}
+.choose .bottom .box .ibox{
+    padding: 3% 0;
+    margin: 3% 0;
+}
+.choose .bottom .box .ibox h3{
+    padding: 2% 0;
+}
+
+/* choose ends here */
+/* what starts here */
+
+.what{
+    padding: 3% 0;
+}
+.what .container{
+}
+.what .top{
+    width: 50%;
+    margin: 2% 0;
+    border: 1px solid black;
+}
+.what .top h2{
+    color: var(--text-primary-color);
+}
+.what .bottom{
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: space-between;
+}
+.what .bottom .box{
+    width: 33%;
+    /* height: 15rem; */
+}
+.what .bottom .box .upper{
+    /* width: 100%;  */
+    background-color: var(--background-color);
+    border-radius: 5%;
+    margin: 0 1%;
+    padding: 18% 8%;
+}
+.what .bottom .box .lower{
+    width: 100%;
+    margin: 5%;
+}
+.what .bottom .box .lower .img-box{
+    width: 5rem;
+    height: 5rem;
+}
+.what .bottom .box .lower .img-box img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+.what .bottom .box .lower h4{
+    font-size: 16px;
+}
+
+/* what ends here */
+/* footer starts here */
+
+.footer{
+    margin-top: 5%;
+}
