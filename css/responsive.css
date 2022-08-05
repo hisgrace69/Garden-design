@@ -1,0 +1,246 @@
+@media only screen and (max-width:1200px){
+   
+    /* services starts here */
+
+     .services .top .gb-parent .green-box{
+        padding: 12%;
+    }
+}
+
+@media only screen and (max-width:920px){
+
+    /* header starts here */
+
+    .header .right{
+          width: 70%;
+          justify-content: end;
+    }
+
+    .header .right .navbar{
+          display: none;
+     }
+
+    .header .right .social i{
+          margin-right: 2%;
+    }
+    
+    /* header ends here */
+    /* services ends here */
+
+     .services .top .gb-parent .green-box{
+          padding: 5%;
+    }
+
+    /* seevices ends here */
+    /* why starts here */
+
+    .why .container{
+          display: unset;
+    }
+
+    .why .left{
+          width: 100%;
+    }
+
+    .why .right{
+          width: 100%;
+    }
+
+    /* why ends here */
+    /* transform starts here */
+
+    .transform .right{
+     width: 30%;
+     }
+
+    /* transform ends here */
+     /* footer starts here */
+
+     .footer .top .container .box{
+          width: 100%;
+     }
+
+     .footer .bottom .container .sec1 ul{
+          width: 30%;
+     }
+
+
+     .footer .bottom .container .sec1 ul span{
+          display: none;
+     }
+
+     /* footer ends here */
+
+}
+
+@media only screen and (max-width:769px) {
+     
+    /* header starts here */
+
+     .header .right{
+          width: 80%;
+          justify-content: end;
+    }
+
+    .header .right .social i{
+     margin-right: 2%;
+     }
+
+
+    /* header ends here */
+    /* section-1 starts here */
+     
+    .section-1 .container{
+          display: unset;
+    }
+     .section-1 .left{
+          background-color: yellow;
+          width: 100%;
+     }
+
+     .section-1 .right{
+          width: 100%;
+     }
+
+     .section-1 .right .top{
+          position: unset;
+          margin: 2% 0 5%;
+     }
+
+     .section-1 .right .box{
+          position: unset;
+          padding: 2%;
+     }
+
+     .section-1 .right .box h3{
+          font-size: 27px;
+     }
+
+
+
+    /* section-1 ends here */
+    /* counter starts here */
+
+     .counter{
+     }
+   
+    .counter .box{
+        width: 48%;
+    }
+
+    /* counter ends here */
+   /* service starts here */
+
+   .services .top .box{
+        width: 100%;
+
+   }
+   .services .container s.top .gb-parent{
+        position: unset;
+        
+     }
+   .services .top .gb-parent .green-box{
+        position: unset;
+     }
+
+     /* services ends here */
+     /* why starts here */
+
+     .why .left{
+          width: 100%;
+    }
+
+    .why .right{
+          width: 100%;
+    }
+
+    .why .right .bottom .box .l-box i{
+          font-size: 1.2rem;
+     }
+/* 
+     .why .right .bottom .box .l-box{
+          width: 40%;
+          height: 4rem;
+     } */
+
+    /* why ends here */
+     /* transform starts here */
+
+     /* .transform .container{
+          justify-content: end;
+     } */
+
+
+     .transform .left{
+          width: 100%;
+     }
+
+     .transform .right{
+          background-color: aqua;
+          width: 100%;
+          /* justify-content: space-around; */
+     }
+
+     .transform .right .btn-2{
+          min-width: 10rem;
+          padding: 15px 3px;
+     }
+
+
+    /* transform ends here */
+
+}
+
+@media only screen and (max-width:320px) {
+     
+     /* section-1 starts here */
+
+     .section-1 .left .top{
+          display: unset;
+     }
+     .section-1 .left .top .box{
+          width: 100%;
+          position: unset;
+     }
+
+     .section-1 .right .box h2{
+          font-size: 27px;
+     }
+     /* counter starts here */
+
+     .counter .box{
+         width: 100%;
+    }
+
+    /* why starts here */
+
+    .why .left{
+          width: 100%;
+     }
+
+     .why .right{
+          width: 100%;
+     }
+
+     /* why ends here */
+      /* transform starts here */
+
+      .transform .left{
+          width: 100%;
+     }
+
+     .transform.right{
+          width: 100%;
+          justify-content: end;
+     }
+
+    /* transform ends here */
+    /* footer starts here */
+
+    .footer .bottom .container .sec1 ul li i{
+         font-size: .7rem;
+     }
+
+    /* footer ends here */
+
+ }

@@ -1,0 +1,71 @@
+
+.ban-blog{
+    background-color: var(--background-color);
+}
+.ban-blog .section{
+    padding: 8% 0;
+}
+
+/* ban-blog ends here */
+/* tips starts here */
+
+.tips{
+    padding: 2% 0;
+}
+.tips .container .section-1{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.tips .section-1 .box{
+    width: 32%;
+}
+.tips .section-1 .box .top{
+    width: 100%;
+}
+.tips .section-1 .box .top .img-box{
+    width: 100%;
+}
+.tips .section-1 .box .top .img-box img{
+    width: 100%;
+    height: 16rem;
+}
+.tips .section-1 .box .bottom{
+    width: 100%;
+    padding: 8% 0;
+}
+.tips .section-1 .box .bottom .box1 span{
+    color: var(--primary-color);
+    font-size: 13px;
+}
+.tips .section-1 .box .bottom .box1 h3{
+    margin-top: 4%;
+}
+.tips .section-1 .box .bottom .box2 .p2{
+    font-size: 14px;
+    color: #888888;
+    padding: 0 0 3%;
+}
+.tips .section-1 .box .bottom .box2 .p2 span{
+    color: #313131;
+    margin: 0 5% 0 1%;
+}
+.tips .section-1 .box .bottom .box2 .p2 span::after{
+    content: "|";
+    width: 1px;
+    height: .5rem;
+    margin: 0 1%;
+    color: #888888;
+    position: absolute;
+}
+.tips .section-1 .box .bottom .box2 p{
+    font-size: 15px;
+    color: #313131;
+    padding: 0 0 5%;
+}
+.tips .section-2{
+    width: 100%;
+}
+.tips .section-2 .button-box{
+    width: 30%;
+}

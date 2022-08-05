@@ -1,40 +1,22 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    --font-primary:'Rubik', sans-serif;
-    --font-secondary: 'Roboto', sans-serif;
-    --font-tertiary:'Lato', sans-serif;
-    --text-primary-color:#111111;
-    --text-secondary-color:#666666;
-    --primary-color: #6ec656; 
-    --background-color: #f5f5f5;
-}
 
-
-
-.service{
+.ban-services{
     background-color: var(--background-color);
 }
-.service .section{
+.ban-services .section{
     padding: 8% 0;
 }
 
-/* garden ends here */
+/* ban-services ends here */
 /* garden starts here */
 
 .garden{
-    height: 20rem;
+    height: 22rem;
     padding: 5% 0 0;
     /* margin-bottom: 25%; */
 
 }
 .garden .container{
-    background-color: yellow;
-
-    /* top: 0; */
     position: relative;
-
 }
 .garden .main{
     display: flex;
@@ -43,26 +25,25 @@
 }
 
 .garden .box{
-    background-color: rgb(47, 0, 255);
     width: 48%;
-    /* height: 18rem; */
 }
 .garden .box .top{
+    width: 100%;
 }
 .garden .box .top img{
     width: 100%;
-    /* height: 25rem; */
 }
-.garden .box h2{
-    color: var(--text-primary-color);
+.garden .box .bottom{
+    background-color: white;
+    padding: 6%;
+}
+.garden .box h3{
     font-size: 27px;
+    padding: 1% 0;
 }
 .garden .box p{
     color: var(--text-secondary-color);
-}
-.garden .box .bottom{
-    border: 1px solid black;
-    background-color: red;
+    padding: 1% 0;
 }
 
 /* garden ends here */
@@ -90,25 +71,28 @@
     width: 33%;
     height: 20rem;
     background-color: white;
-    /* border: 1px solid black; */
     padding: 2%;
-    margin: 0 1%;
+    margin: 4% 1% 8%;
 }
 .choose .bottom .box .icon{
     width: 5rem;
     height: 5rem;
-    margin: 0 0 6%;
+    margin: 0 0 3%;
     background-color: var(--primary-color);
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 100%;
 }
+.choose .bottom .box .icon:hover{
+    transform: scale(1.1);
+}
 .choose .bottom .box .icon i{
     color: white;
+    font-size: 24px;
 }
 .choose .bottom .box .ibox{
-    padding: 3% 0;
+    padding: 2% 0;
     margin: 3% 0;
 }
 .choose .bottom .box .ibox h3{
@@ -121,47 +105,71 @@
 .what{
     padding: 3% 0;
 }
-.what .container{
-}
 .what .top{
     width: 50%;
-    margin: 2% 0;
-    border: 1px solid black;
+    margin: 3% 0;
 }
 .what .top h2{
+    font-size: 36px;
     color: var(--text-primary-color);
 }
 .what .bottom{
-    /* background-color: yellow; */
     display: flex;
     justify-content: space-between;
 }
 .what .bottom .box{
-    width: 33%;
-    /* height: 15rem; */
+    width: 32%;
 }
 .what .bottom .box .upper{
-    /* width: 100%;  */
     background-color: var(--background-color);
     border-radius: 5%;
-    margin: 0 1%;
-    padding: 18% 8%;
+    padding: 8%;
+    position: relative;
 }
+.what .bottom .box .upper p{
+    margin-top: 3rem;
+}
+.what .bottom .box .upper p::before{
+    font-family: "Font Awesome 5 Free";
+    content: "\f10d";
+    font-weight: 900; 
+    font-size: 3.5rem;
+    color: var(--primary-color);
+    position: absolute; 
+    top: 2rem;
+    left: 2rem;
+}
+.what .bottom .box .upper ul{
+    display: flex;
+    padding: 1% 0 8%;
+}
+.what .bottom .box .upper ul li{
+    list-style: none;
+    color: #ffb74d;
+}
+
 .what .bottom .box .lower{
     width: 100%;
-    margin: 5%;
+    position: relative;
 }
 .what .bottom .box .lower .img-box{
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;   
+    position: absolute;
+    bottom: 2.5rem;
+    left: 1.5rem;
 }
 .what .bottom .box .lower .img-box img{
     width: 100%;
     height: 100%;
     border-radius: 100%;
 }
+.what .bottom .box .lower .text-box{
+    margin: 5% 0 0;
+}
 .what .bottom .box .lower h4{
     font-size: 16px;
+    padding: 10% 6% 0;
 }
 
 /* what ends here */

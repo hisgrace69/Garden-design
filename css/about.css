@@ -1,0 +1,100 @@
+
+.ban-about{
+    background-color: var(--background-color);
+}
+.ban-about .section{
+    padding: 8% 0;
+}
+
+/* ban-about ends here */
+/* story starts here */
+
+.story{
+    padding: 8% 0;
+}
+.story .container{
+    display: flex;
+    justify-content: space-between;
+}
+.story .left{
+    width: 49%;
+}
+.story .left .box{
+    width: 100%;
+}
+.story .left .box img{
+    width: 100%;
+}
+.story .right{
+    width: 49%;
+}
+.story .right .top .box{
+    margin-bottom: 3%;
+}
+.story .right .top .box img{
+    width: 100%;
+}
+.story .right .bottom .box{
+    background-color: var(--background-color);
+    padding: 5%;
+}
+.story .right .bottom .box h3{
+    font-size: 36px;
+}
+
+.story .right .bottom .box p{
+    color: black;
+    font-size: 15px;
+}
+
+/* story ends here */
+/* core starts here */
+
+.core{
+    padding: 2% 0%;
+    margin: 0 0 3%;
+    background-image: url(/image/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.core .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.core .container .box{
+    width: 32%;
+    padding: 13% 0;
+}
+.core .container .box h2{
+    font-size: 36px;
+}
+.core .container head{
+    align-items: center;
+    background-color: blueviolet;
+}
+.core .container .box p{
+    color: white;
+}
+.core .container .box video{
+
+}
+
+/* core ends here */
+/* pictures starts here */
+
+.pictures{
+    padding: 0 1%;
+    /* background-color: aquamarine; */
+}
+.pictures .section{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: blue; */
+}
+.pictures .box{
+    width: 24%;
+}
+.pictures .box img{
+    width: 100%;
+}

@@ -9,15 +9,27 @@
     --text-secondary-color:#666666;
     --primary-color: #6ec656; 
     --background-color: #f5f5f5;
+    --border-color: #e6e9ee;
 }
 html{
     scroll-behavior: smooth;
 }
 h1{
     font-family: var(--font-primary);
-    color : white;
-    font-size: 33px;
+    font-size: 36px;
+    font-weight: 500;
+    color: var(--text-primary-color);
     margin-bottom: 2%;
+    position: relative;
+}
+h1:after{
+    content: "";
+    bottom: -1.3rem;
+    left: 0rem;
+    background-color: var(--primary-color);
+    width: 3.4rem;
+    height: .1rem;
+    position: absolute;
 }
 h2{
     font-family: var(--font-primary);
@@ -28,12 +40,19 @@ h2{
 }
 h3{
     font-family: var(--font-primary);
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 500;
     color: var(--text-primary-color);
     margin-bottom: 2%;
 }
 h4{
+    font-family: var(--font-primary);
+    color: #313131;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 2%;
+}
+/* h4{
     font-family: var(--font-primary);
     font-size: 27px;
     font-weight: 500;
@@ -41,20 +60,14 @@ h4{
     margin-bottom: 2%;
 
 }
-h5{
-    font-family: var(--font-primary);
-    font-size: 36px;
-    font-weight: 500;
-    color: var(--text-primary-color);
-    margin-bottom: 2%;
-}
+
 h6{
     font-family: var(--font-primary);
     font-size: 24px;
     font-weight: 500;
     color: var(--text-primary-color);
     margin-bottom: 2%;
-}
+} */
 p{
     font-family: var(--font-secondary);
     color : var(--text-secondary-color);
@@ -66,6 +79,11 @@ p{
     color: white;
     font-size: 18px;
     line-height: 1.6rem;
+}
+span{
+    font-family: var(--font-secondary);
+    font-size: 14px;
+    color: #999999;
 }
 .up-button{
     width: 2.2rem;
@@ -84,26 +102,61 @@ p{
 }
 button{
     color: black;
-    min-width: 12rem;
-    padding: 20px 40px;
     border: none;
-    border-radius: 6px;
     cursor: pointer;
 }
 button span{
+    margin-left: 5%;
     text-transform: uppercase;
     font-family: var(--font-secondary);
     font-size: 14px;
     font-weight: 600;
 }
 .btn-1{
+    min-width: 13rem;
+    padding: 20px 35px;
+    margin-top: 8%;
     background-color: white;
     color: var(--primary-color);
-    margin-top: 8%;
+    border-radius: 6px;
+}
+.btn-1 span{
+    color: var(--primary-color);
+}
+.btn-1:hover{
+    background-color: black;
+    color: var(--primary-color);
+    transition: 1000ms;
 }
 .btn-2{
+    min-width: 13rem;
+    padding: 20px 35px;
     background-color: var(--primary-color);
     color: white;
+    border-radius: 6px;
+}
+.btn-2:hover{
+    background-color: #111111;
+    transition: 1000ms;
+}
+.btn-2 span{
+    color: white;
+}
+.btn-3{
+    background-color: var(--background-color);
+    padding: 12px 30px;
+}
+.btn-3:hover{
+    background-color: var(--primary-color);
+    color: white;
+    transition: 1000ms;
+}
+.btn-3:hover span{
+    color: white;
+    transition: 1000ms;
+}
+.btn-3 span{
+    color: black;
 }
 .container{
     width: 90%;
@@ -125,6 +178,7 @@ a{
 }
 .header .logo{
     width: 20%;
+    cursor: pointer;
 }
 .header .logo img{
     width: 65%;
@@ -148,6 +202,10 @@ a{
     font-weight: 500;
     color: black;
 }
+.header .navbar ul li:hover{
+    color: var(--primary-color);
+    transition: 500ms;
+}
 .header .social{
     width: 22%;
     display: flex;
@@ -157,14 +215,22 @@ a{
     cursor: pointer;
     font-size: 13px;
 }
+.header .social i:hover{
+    color: var(--primary-color);
+}
+
 /* header ends here */
 
 /* banner starts here */
 .banner{
     height: 100vh;
     background-image: url(../image/banner.jpg);
+    /* linear-gradient(rgba(0,0,.5)); */ 
+    /* background-color: #000; */
+    background-blend-mode: multiply;
     background-repeat: no-repeat;
     background-size: cover;
+
     position: relative;
 }
 .banner .ban{
@@ -176,7 +242,8 @@ a{
     border-left: 2px solid greenyellow;
     padding: 3%;
 }
-.banner .ban h1{
+.banner .ban h2{
+    font-size: 33px;
     margin-bottom: 3%;
 }
 /* banner ends here */
@@ -201,6 +268,8 @@ a{
 }
 .section-1 .left .top .box img{
     width: 100%;
+    cursor: pointer;
+
 }
 .section-1 .left .bottom{
 }
@@ -220,9 +289,6 @@ a{
     position: absolute;
     bottom: 0;
 }
-.section-1 .right .top h3{
-    font-size: 32px;
-}
 .section-1 .right .bottom{
     background-color: var(--background-color);
     margin: 6% 0;
@@ -232,15 +298,18 @@ a{
 
 /* counter starts here */
 .counter{
-    padding: 2% 0;
-    margin-bottom: 8%;
+    padding: 3% 0;
+    margin-bottom: 4%;
 }
 .counter .container{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 .counter .box{
-    margin: 0 2%;
+    width: 23%;
+    /* border: 1px solid black; */
+    margin: 0 1% 1%;
     text-align: center;
 }
 .counter .box i{
@@ -248,6 +317,9 @@ a{
     font-size: 3rem;
     margin: 5%;
     cursor: pointer;
+}
+.counter .box h3{
+    font-size: 20px;
 }
 
 /* counter ends here */
@@ -283,6 +355,9 @@ a{
 }
 .services .top .text-box{
     padding: 3%;
+}
+.services .top .text-box h3{
+    font-size: 27px;
 }
 .services .top .box img{
     width: 100%;
@@ -323,6 +398,9 @@ a{
     width: 52%;
     margin: 0 0 2% 2%;
 }
+.why .right .top h3{
+    font-size: 36px;
+}
 .why .right .bottom{
     margin: 2% 0;
 }
@@ -332,6 +410,7 @@ a{
     display: flex;
     justify-content: space-between;
 }
+
 .why .right .bottom .box .l-box{
     height: 5rem;
     width: 15%;
@@ -339,13 +418,20 @@ a{
     background-color: var(--primary-color);
     border-radius: 100%;
 }
+.why .right .bottom .box .l-box:hover{
+    transform: scale(1.1);
+}
 .why .right .bottom .box .l-box i{
     padding: 35%;
     font-size: 1.5rem;
     color: white;
+    cursor: pointer;
 }
 .why .right .bottom .box .r-box{
     width: 85%;
+}
+.why .right .bottom .box .r-box h3{
+    font-size: 24px;
 }
 
 /* why ends here */
@@ -353,12 +439,16 @@ a{
 
 .transform{
     padding: 3% 0;
-    background-image: url(../image/image-8.jpg);
+    background-image: url(../image/image-8.jpg) ,linear-gradient(rgba(0,0,0,.35));
+    background-color: #000;
+    background-blend-mode: multiply;
     background-size: cover;
 }
 .transform .container{
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: 
+    space-between;
     align-items: center;
 }
 .transform .left{
@@ -370,8 +460,8 @@ a{
     color: var(--primary-color);
     margin: 5% 0;
 }
-.transform .left h5{
-    color: white;
+.transform .left h2{
+    font-size: 36px;
 }
 .transform .right{
     width: 20%;
@@ -385,23 +475,21 @@ a{
 }
 .footer .top{
     padding: 4% 0;
+    background-color: var(--background-color);
 }
 .footer .top .container{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 .footer .top .container .box{
     width: 22%;
-    /* padding: 5% 0; */
-    /* background-color: yellow; */
 }
 .footer .top .container .box img{
     width: 75%;
     margin: 9% 0 5%;
 }
-.footer .top .container .box h2{
-    font-size: 14px;
-    color: #313131;
+.footer .top .container .box h4{
     border-bottom: 3px solid #e0e0e0;
     padding: 8% 0;
     margin-bottom: 6%;
@@ -414,7 +502,13 @@ a{
     border-bottom: 1px solid #DEDEDE;
     padding: 4% 0;
     margin-bottom: 6%;
+    cursor: pointer;
 }
+.footer .top .container .box ul li:hover{
+    color: var(--primary-color);
+    transition: 1000ms;
+}
+
 .footer .top .container .box .p2{
     margin: 8% 0;
 }
@@ -425,6 +519,7 @@ a{
 }
 .footer .top .container .box span{
     font-weight: 600;
+    color: var(--text-primary-color);
 }
 .footer .bottom{
     background-color: #111111;
@@ -453,19 +548,27 @@ a{
     cursor: pointer;
 }
 .footer .bottom .container .sec1 ul span{
-    font-family: var(--font-secondary);
-    font-size: 14px;
     font-weight: 500;
     color: #999;
     letter-spacing: 1px;
+    cursor: pointer;
 }
+.footer .bottom .container .sec1 ul span:hover{
+    color: var(--primary-color);
+    transition: 1000ms;
+}
+
 .footer .bottom .container .sec2{
     padding: 2% 0;
     text-align: center;
-    /* background-color: yellow; */
 }
-.footer .bottom .container .sec2 .green{
+.footer .bottom .container .sec2 p{
+    font-size: 14px;
+    color: #999;
+}
+.footer .bottom .container .sec2 span{
     color: var(--primary-color);
+    cursor: pointer;
 }
 
 
